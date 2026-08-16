@@ -8,9 +8,9 @@
 
 [Download latest release](https://github.com/zivanovicmarko-stack/OpenAI-Data-Exporter/releases/latest)
 
-# OpenAI Data Exporter
+**OpenAI Data Exporter**
 
-### Export your ChatGPT conversations as clean, portable Markdown and PDF files, directly from an official OpenAI data export ZIP.
+**Export your ChatGPT conversations as clean, portable Markdown and PDF files, directly from an official OpenAI data export ZIP.**
 
 **Free to use, including commercially | Runs locally in your browser | No uploads | No account | No telemetry | Large images in PDF exports**
 
@@ -18,19 +18,19 @@ OpenAI Data Exporter converts an official OpenAI data export ZIP into separate M
 
 ---
 
-## 🗂️ File formats
+**🗂️ File formats**
 
 Conversations can be exported as Markdown, PDF, or both. Markdown provides portable, searchable text with related files, while PDF provides a single-file document with selectable text, large images where available and clearly represented attachments.
 
 Folder exports also include an `Assets` folder containing available original files extracted from the conversations, including images and other attachments found in the OpenAI Data Export ZIP file.
 
-### 📄 Markdown
+**📄 Markdown**
 
 Each conversation is exported as a separate `.md` file with readable text, timestamps and conversation metadata. Related files are preserved alongside the Markdown files in folder exports.
 
 Web-linked images remain as their original URLs in Markdown. Markdown export does not fetch or embed content from those URLs.
 
-### 📕 PDF
+**📕 PDF**
 
 Each conversation is exported as a separate `.pdf` file with selectable text, large images where available and clearly represented attachments. Images use the available page space instead of being reduced to small chat thumbnails.
 
@@ -38,7 +38,7 @@ Images referenced through web links are fetched and embedded when possible. Imag
 
 ---
 
-## 🔒 Local processing
+**🔒 Local processing**
 
 Your OpenAI export ZIP is processed directly in your browser and is not uploaded anywhere. The exporter has no backend, account system or telemetry.
 
@@ -46,13 +46,13 @@ Internet access is used only when generating PDFs that contain web-linked images
 
 ---
 
-## 📦 Large exports
+**📦 Large exports**
 
 Large OpenAI export archives are supported, including ZIP64 files and archives larger than 2 GB. Large exports can be processed directly without splitting them into smaller archives first.
 
 ---
 
-## 🔎 Additional Content
+**🔎 Additional Content**
 
 OpenAI exports can omit AI-generated images and other content from the normal conversation data even when recoverable material still exists elsewhere inside the ZIP.
 
@@ -60,7 +60,7 @@ After the initial extraction, the exporter checks for traces of that content and
 
 ---
 
-## 📅 Dates and filenames
+**📅 Dates and filenames**
 
 Chat creation and update dates can be added independently to exported filenames, making larger archives easier to organise and sort. The **creation date** represents when the conversation was created, while the **update date** is the timestamp of its last message.
 
@@ -73,7 +73,7 @@ Message timestamps use `YYYY-MM-DD HH:MM:SS` in 24-hour format.
 
 ---
 
-## 📑 How to use
+**📑 How to use**
 
 The normal workflow is straightforward: load the OpenAI export, review the conversations found inside it, choose the required output and export the files. Additional recovery is offered only when potentially recoverable content is detected.
 
@@ -89,11 +89,11 @@ Direct folder export requires browser support for local folder access, such as C
 ---
 
 <details>
-<summary><h2>⚙️ Technical details</h2></summary>
+<summary><strong>⚙️ Technical details</strong></summary>
 
 This section covers processing, extraction and export behaviour in more detail, including information intentionally left out of the general overview.
 
-### 🧮 Processing model
+**🧮 Processing model**
 
 OpenAI Data Exporter is a standalone browser application. The source archive and extracted conversation data remain on the user's device throughout processing.
 
@@ -104,7 +104,7 @@ OpenAI Data Exporter is a standalone browser application. The source archive and
 - Ordinary web links remain links and are not fetched or embedded as content.
 - External requests are made only while generating PDFs that contain web-linked images.
 
-### 📦 ZIP handling
+**📦 ZIP handling**
 
 ZIP processing takes place directly in the browser rather than through a server-side extraction service.
 
@@ -113,7 +113,7 @@ ZIP processing takes place directly in the browser rather than through a server-
 - No artificial archive-size cutoff is applied by the exporter.
 - The source archive is read directly rather than uploaded for extraction.
 
-### 💬 Conversation extraction
+**💬 Conversation extraction**
 
 Conversations are reconstructed from the data available inside the official OpenAI export. Timing and naming information is preserved so the resulting files remain useful independently of the ChatGPT interface.
 
@@ -127,7 +127,7 @@ Conversations are reconstructed from the data available inside the official Open
 - Chat selections remain active when the search filter changes.
 - Selected folder export includes all selected chats, including selections that are not currently visible under the active search filter.
 
-### 📄 Markdown output
+**📄 Markdown output**
 
 Markdown exports remain normal readable text files and do not require a proprietary viewer.
 
@@ -146,7 +146,7 @@ Web-linked images are not fetched during Markdown export. Their original URLs ar
 
 Each Markdown export ends with a single attribution line linking to OpenAI Data Exporter and its author.
 
-### 📕 PDF output
+**📕 PDF output**
 
 PDF exports are generated as readable documents rather than screenshots of the ChatGPT interface. When a larger version of an image exists in the OpenAI export, that image is extracted and used instead of the small thumbnail shown in ChatGPT.
 
@@ -162,7 +162,7 @@ PDF exports are generated as readable documents rather than screenshots of the C
 - Non-image attachments use dedicated visual items with filename, type and size where available.
 - A single attribution block appears at the end of the conversation rather than as a repeated page footer.
 
-### 🌐 Web-linked images
+**🌐 Web-linked images**
 
 Web-linked images are handled differently from ordinary links because PDF export attempts to retrieve the image itself and embed it in the document.
 
@@ -199,7 +199,7 @@ The web image could not be fetched and embedded.
 
 Other external links remain normal links and are not fetched or embedded into the document.
 
-### 🔎 Additional Content scan
+**🔎 Additional Content scan**
 
 Additional-content recovery is a separate optional stage performed only after the initial result already exists.
 
@@ -210,7 +210,7 @@ Additional-content recovery is a separate optional stage performed only after th
 - Skipping the deeper scan does not cancel or alter the initial result.
 - A deeper scan can recover content that exists elsewhere inside the ZIP, but cannot reconstruct content absent from the source export.
 
-### 🗂 Folder exports
+**🗂 Folder exports**
 
 Folder export writes multiple conversations directly to a location selected by the user.
 
@@ -220,7 +220,7 @@ Folder export writes multiple conversations directly to a location selected by t
 - Additional recovered content updates existing exported files instead of creating duplicate versions.
 - Cancelling a later folder-selection dialog does not clear the folder that was already selected.
 
-### 📚 File type selection
+**📚 File type selection**
 
 Batch export can be limited to the required output types.
 
@@ -228,7 +228,7 @@ Batch export can be limited to the required output types.
 - **MD Files Only:** Markdown and its available Assets.
 - **PDF Files Only:** PDFs with selectable text and available images.
 
-### 💾 Individual file saves
+**💾 Individual file saves**
 
 Individual conversation saves use normal browser download behaviour rather than direct folder writing.
 
@@ -237,7 +237,7 @@ Individual conversation saves use normal browser download behaviour rather than 
 - If potentially recoverable content is detected, the user can skip the optional scan and download the initial version.
 - Continuing the scan downloads the updated individual file after processing is complete.
 
-### 🌐 Browser folder access
+**🌐 Browser folder access**
 
 Direct folder writing depends on browser support for local folder access, while individual files continue to use normal browser downloads.
 
@@ -245,7 +245,7 @@ Direct folder writing depends on browser support for local folder access, while 
 - Folder writing is supported by browsers such as Chrome and Edge that expose the required capability.
 - Individual Markdown and PDF saves use normal browser downloads.
 
-### 📎 Attachments and assets
+**📎 Attachments and assets**
 
 Attachments are preserved according to their type and the export format being generated.
 
@@ -254,7 +254,7 @@ Attachments are preserved according to their type and the export format being ge
 - PDF exports represent non-image attachments as dedicated visual file items.
 - Larger image files found in the export are used in PDFs instead of smaller chat thumbnails where available.
 
-### 🔐 Privacy and network behaviour
+**🔐 Privacy and network behaviour**
 
 Local processing applies to the OpenAI archive and the conversation data extracted from it. External access is used only when generating PDFs that contain web-linked images.
 
@@ -267,7 +267,7 @@ Local processing applies to the OpenAI archive and the conversation data extract
 - Markdown export does not fetch web-linked images.
 - PDF export makes external requests only for web-linked images referenced by the conversation.
 
-### ⚠️ Known limitations
+**⚠️ Known limitations**
 
 OpenAI Data Exporter can only work with data present in the source archive or web-linked images that the exporter is able to retrieve through the browser from their original URLs.
 
@@ -283,7 +283,7 @@ OpenAI Data Exporter can only work with data present in the source archive or we
 
 ---
 
-## Licence
+**Licence**
 
 OpenAI Data Exporter is **free to use, including for commercial use**. It is licensed under the **Apache License 2.0 with the Commons Clause License Condition v1.0**.
 
@@ -304,7 +304,7 @@ OpenAI Data Exporter is therefore **source-available**, rather than OSI open sou
 
 ---
 
-## Feedback and issues
+**Feedback and issues**
 
 Bug reports, edge cases and practical feedback are welcome. OpenAI may change the structure or contents of its data exports over time, so reports involving exports that behave differently from expected are particularly useful.
 
@@ -312,7 +312,7 @@ Please use the [Issues](https://github.com/zivanovicmarko-stack/OpenAI-Data-Expo
 
 ---
 
-## Screenshots
+**Screenshots**
 
 The gallery below shows the complete workflow from loading an OpenAI export to reviewing the resulting files. Each screenshot opens its full-resolution version.
 
@@ -326,17 +326,17 @@ The gallery below shows the complete workflow from loading an OpenAI export to r
     </td>
   </tr>
   <tr>
-    <td width="50%" valign="middle" align="left" bgcolor="#0d1117">
-      <br />
-      <strong>Load export</strong><br />
-      <small>Load or drop the official OpenAI data export ZIP.</small>
-      <br />
+    <td width="50%" height="64" valign="middle" align="center" bgcolor="#0d1117">
+      <div align="center">
+        <strong>Load export</strong><br />
+        <small><small>Load or drop the official OpenAI data export ZIP.</small></small>
+      </div>
     </td>
-    <td width="50%" valign="middle" align="left" bgcolor="#0d1117">
-      <br />
-      <strong>Select export ZIP</strong><br />
-      <small>The selected ZIP is ready for <code>Begin Extraction...</code>.</small>
-      <br />
+    <td width="50%" height="64" valign="middle" align="center" bgcolor="#0d1117">
+      <div align="center">
+        <strong>Select export ZIP</strong><br />
+        <small><small>The selected ZIP is ready for <code>Begin Extraction...</code>.</small></small>
+      </div>
     </td>
   </tr>
   <tr>
@@ -348,17 +348,17 @@ The gallery below shows the complete workflow from loading an OpenAI export to r
     </td>
   </tr>
   <tr>
-    <td width="50%" valign="middle" align="left" bgcolor="#0d1117">
-      <br />
-      <strong>Extract chats</strong><br />
-      <small>Extract conversations locally from the selected OpenAI data export ZIP.</small>
-      <br />
+    <td width="50%" height="64" valign="middle" align="center" bgcolor="#0d1117">
+      <div align="center">
+        <strong>Extract chats</strong><br />
+        <small><small>Extract conversations locally from the selected OpenAI data export ZIP.</small></small>
+      </div>
     </td>
-    <td width="50%" valign="middle" align="left" bgcolor="#0d1117">
-      <br />
-      <strong>Review chats</strong><br />
-      <small>Search, sort and select extracted conversations.</small>
-      <br />
+    <td width="50%" height="64" valign="middle" align="center" bgcolor="#0d1117">
+      <div align="center">
+        <strong>Review chats</strong><br />
+        <small><small>Search, sort and select extracted conversations.</small></small>
+      </div>
     </td>
   </tr>
   <tr>
@@ -370,17 +370,17 @@ The gallery below shows the complete workflow from loading an OpenAI export to r
     </td>
   </tr>
   <tr>
-    <td width="50%" valign="middle" align="left" bgcolor="#0d1117">
-      <br />
-      <strong>Choose export folder</strong><br />
-      <small>Choose the folder where exported files will be written.</small>
-      <br />
+    <td width="50%" height="64" valign="middle" align="center" bgcolor="#0d1117">
+      <div align="center">
+        <strong>Choose export folder</strong><br />
+        <small><small>Choose the folder where exported files will be written.</small></small>
+      </div>
     </td>
-    <td width="50%" valign="middle" align="left" bgcolor="#0d1117">
-      <br />
-      <strong>Allow folder access</strong><br />
-      <small>Allow the browser to write files to the selected export folder.</small>
-      <br />
+    <td width="50%" height="64" valign="middle" align="center" bgcolor="#0d1117">
+      <div align="center">
+        <strong>Allow folder access</strong><br />
+        <small><small>Allow the browser to write files to the selected export folder.</small></small>
+      </div>
     </td>
   </tr>
   <tr>
@@ -392,17 +392,17 @@ The gallery below shows the complete workflow from loading an OpenAI export to r
     </td>
   </tr>
   <tr>
-    <td width="50%" valign="middle" align="left" bgcolor="#0d1117">
-      <br />
-      <strong>Choose file types</strong><br />
-      <small>Choose <code>All File Types</code>, <code>MD Files Only</code> or <code>PDF Files Only</code>.</small>
-      <br />
+    <td width="50%" height="64" valign="middle" align="center" bgcolor="#0d1117">
+      <div align="center">
+        <strong>Choose file types</strong><br />
+        <small><small>Choose <code>All File Types</code>, <code>MD Files Only</code> or <code>PDF Files Only</code>.</small></small>
+      </div>
     </td>
-    <td width="50%" valign="middle" align="left" bgcolor="#0d1117">
-      <br />
-      <strong>Start bulk export</strong><br />
-      <small>Start exporting the selected conversations to the chosen folder.</small>
-      <br />
+    <td width="50%" height="64" valign="middle" align="center" bgcolor="#0d1117">
+      <div align="center">
+        <strong>Start bulk export</strong><br />
+        <small><small>Start exporting the selected conversations to the chosen folder.</small></small>
+      </div>
     </td>
   </tr>
   <tr>
@@ -414,17 +414,17 @@ The gallery below shows the complete workflow from loading an OpenAI export to r
     </td>
   </tr>
   <tr>
-    <td width="50%" valign="middle" align="left" bgcolor="#0d1117">
-      <br />
-      <strong>Folder control disabled</strong><br />
-      <small><code>Choose export folder</code> remains disabled while the current bulk export is running.</small>
-      <br />
+    <td width="50%" height="64" valign="middle" align="center" bgcolor="#0d1117">
+      <div align="center">
+        <strong>Folder control disabled</strong><br />
+        <small><small><code>Choose export folder</code> remains disabled while the current bulk export is running.</small></small>
+      </div>
     </td>
-    <td width="50%" valign="middle" align="left" bgcolor="#0d1117">
-      <br />
-      <strong>Single-file saves disabled</strong><br />
-      <small><code>Save MD</code> and <code>Save PDF</code> remain disabled while the current bulk export is running.</small>
-      <br />
+    <td width="50%" height="64" valign="middle" align="center" bgcolor="#0d1117">
+      <div align="center">
+        <strong>Single-file saves disabled</strong><br />
+        <small><small><code>Save MD</code> and <code>Save PDF</code> remain disabled while the current bulk export is running.</small></small>
+      </div>
     </td>
   </tr>
   <tr>
@@ -436,17 +436,17 @@ The gallery below shows the complete workflow from loading an OpenAI export to r
     </td>
   </tr>
   <tr>
-    <td width="50%" valign="middle" align="left" bgcolor="#0d1117">
-      <br />
-      <strong>Reset disabled</strong><br />
-      <small>Reset exporter remains unavailable until the current bulk export finishes, as well as any other action except &quot;Cancel&quot;.</small>
-      <br />
+    <td width="50%" height="64" valign="middle" align="center" bgcolor="#0d1117">
+      <div align="center">
+        <strong>Reset disabled</strong><br />
+        <small><small>Reset exporter remains unavailable until the current bulk export finishes, as well as any other action except &quot;Cancel&quot;.</small></small>
+      </div>
     </td>
-    <td width="50%" valign="middle" align="left" bgcolor="#0d1117">
-      <br />
-      <strong>Additional Content</strong><br />
-      <small>Potentially recoverable content was detected after the basic export.</small>
-      <br />
+    <td width="50%" height="64" valign="middle" align="center" bgcolor="#0d1117">
+      <div align="center">
+        <strong>Additional Content</strong><br />
+        <small><small>Potentially recoverable content was detected after the basic export.</small></small>
+      </div>
     </td>
   </tr>
   <tr>
@@ -458,17 +458,17 @@ The gallery below shows the complete workflow from loading an OpenAI export to r
     </td>
   </tr>
   <tr>
-    <td width="50%" valign="middle" align="left" bgcolor="#0d1117">
-      <br />
-      <strong>Working...</strong><br />
-      <small><code>Working...</code> processes Additional Content for the selected exports.</small>
-      <br />
+    <td width="50%" height="64" valign="middle" align="center" bgcolor="#0d1117">
+      <div align="center">
+        <strong>Working...</strong><br />
+        <small><small><code>Working...</code> processes Additional Content for the selected exports.</small></small>
+      </div>
     </td>
-    <td width="50%" valign="middle" align="left" bgcolor="#0d1117">
-      <br />
-      <strong>Finished</strong><br />
-      <small><code>Finished</code> shows which exported files were updated.</small>
-      <br />
+    <td width="50%" height="64" valign="middle" align="center" bgcolor="#0d1117">
+      <div align="center">
+        <strong>Finished</strong><br />
+        <small><small><code>Finished</code> shows which exported files were updated.</small></small>
+      </div>
     </td>
   </tr>
   <tr>
@@ -480,17 +480,17 @@ The gallery below shows the complete workflow from loading an OpenAI export to r
     </td>
   </tr>
   <tr>
-    <td width="50%" valign="middle" align="left" bgcolor="#0d1117">
-      <br />
-      <strong>Return to exporter</strong><br />
-      <small>Close the result to return to the exporter and continue working.</small>
-      <br />
+    <td width="50%" height="64" valign="middle" align="center" bgcolor="#0d1117">
+      <div align="center">
+        <strong>Return to exporter</strong><br />
+        <small><small>Close the result to return to the exporter and continue working.</small></small>
+      </div>
     </td>
-    <td width="50%" valign="middle" align="left" bgcolor="#0d1117">
-      <br />
-      <strong>Exported files</strong><br />
-      <small>Review the resulting Markdown, PDF and available Assets in the selected folder.</small>
-      <br />
+    <td width="50%" height="64" valign="middle" align="center" bgcolor="#0d1117">
+      <div align="center">
+        <strong>Exported files</strong><br />
+        <small><small>Review the resulting Markdown, PDF and available Assets in the selected folder.</small></small>
+      </div>
     </td>
   </tr>
 </table>
