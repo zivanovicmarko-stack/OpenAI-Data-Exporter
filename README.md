@@ -316,29 +316,133 @@ Please use the [Issues](https://github.com/zivanovicmarko-stack/OpenAI-Data-Expo
 
 The gallery below shows the complete workflow from loading an OpenAI export to reviewing the resulting files. Each screenshot opens its full-resolution version.
 
-| | |
-|:---:|:---:|
-| **01 · Load export** | **02 · Select export ZIP** |
-| [![Initial exporter state](readme_files/01%20-%20Initial%20state.png)](readme_files/01%20-%20Initial%20state.png) | [![OpenAI Data Export ZIP selected](readme_files/02%20-%20OpenAI%20Data%20Export%20ZIP%20selected.png)](readme_files/02%20-%20OpenAI%20Data%20Export%20ZIP%20selected.png) |
-| Load or drop the official OpenAI data export ZIP. | The selected ZIP is ready for `Begin Extraction...`. |
-| **03 · Extract chats** | **04 · Review chats** |
-| [![Extracting chats from Data Export ZIP](readme_files/03%20-%20Extracting%20chats%20from%20Data%20Export%20ZIP.png)](readme_files/03%20-%20Extracting%20chats%20from%20Data%20Export%20ZIP.png) | [![Chats List initial view](readme_files/04%20-%20Chats%20List%20-%20Initial%20view.png)](readme_files/04%20-%20Chats%20List%20-%20Initial%20view.png) |
-| Extract conversations locally from the selected OpenAI data export ZIP. | Search, sort and select extracted conversations. |
-| **05 · Choose export folder** | **06 · Allow folder access** |
-| [![Choose export folder](readme_files/05%20-%20Choose%20export%20folder.png)](readme_files/05%20-%20Choose%20export%20folder.png) | [![Allow browser to write in selected export folder](readme_files/06%20-%20Allow%20browser%20to%20write%20in%20selected%20export%20folder.png)](readme_files/06%20-%20Allow%20browser%20to%20write%20in%20selected%20export%20folder.png) |
-| Choose the folder where exported files will be written. | Allow the browser to write files to the selected export folder. |
-| **07 · Choose file types** | **08 · Start bulk export** |
-| [![File Types menu](readme_files/07%20-%20File%20Types%20menu.png)](readme_files/07%20-%20File%20Types%20menu.png) | [![Start exporting selected chats](readme_files/08%20-%20Start%20exporting%20selected%20chats.png)](readme_files/08%20-%20Start%20exporting%20selected%20chats.png) |
-| Choose `All File Types`, `MD Files Only` or `PDF Files Only`. | Start exporting the selected conversations to the chosen folder. |
-| **09 · Folder control disabled** | **10 · Single-file saves disabled** |
-| [![Choose export folder disabled during bulk export](readme_files/09%20-%20Bulk%20extraction%20-%20Disabled%20Choose%20export%20folder.png)](readme_files/09%20-%20Bulk%20extraction%20-%20Disabled%20Choose%20export%20folder.png) | [![Single chat downloads disabled during bulk export](readme_files/10%20-%20Bulk%20extraction%20-%20Disabled%20single%20chats%20downloads.png)](readme_files/10%20-%20Bulk%20extraction%20-%20Disabled%20single%20chats%20downloads.png) |
-| `Choose export folder` remains disabled while the current bulk export is running. | `Save MD` and `Save PDF` remain disabled while the current bulk export is running. |
-| **11 · Reset disabled** | **12 · Additional Content** |
-| [![Reset action disabled during bulk export](readme_files/11%20-%20Bulk%20extraction%20-%20Disabled%20Reset%20action.png)](readme_files/11%20-%20Bulk%20extraction%20-%20Disabled%20Reset%20action.png) | [![Additional Content found](readme_files/12%20-%20Additional%20content%20found.png)](readme_files/12%20-%20Additional%20content%20found.png) |
-| Reset exporter remains unavailable until the current bulk export finishes, as well as any other action except "Cancel". | Potentially recoverable content was detected after the basic export. |
-| **13 · Working...** | **14 · Finished** |
-| [![Processing Additional Content for selected exports](readme_files/13%20-%20Processing%20additional%20content%20for%20selected%20exports.png)](readme_files/13%20-%20Processing%20additional%20content%20for%20selected%20exports.png) | [![Finished Additional Content result](readme_files/14%20-%20Result%20of%20second%20pass.png)](readme_files/14%20-%20Result%20of%20second%20pass.png) |
-| `Working...` processes Additional Content for the selected exports. | `Finished` shows which exported files were updated. |
-| **15 · Return to exporter** | **16 · Exported files** |
-| [![Back to exporter on Close](readme_files/15%20-%20Back%20to%20exporter%20on%20Close.png)](readme_files/15%20-%20Back%20to%20exporter%20on%20Close.png) | [![Exported folders and files](readme_files/16%20-%20Exported%20folders%20and%20files.png)](readme_files/16%20-%20Exported%20folders%20and%20files.png) |
-| Close the result to return to the exporter and continue working. | Review the resulting Markdown, PDF and available Assets in the selected folder. |
+<table width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="50%" valign="top" align="left">
+      <a href="readme_files/01%20-%20Initial%20state.png"><img src="readme_files/01%20-%20Initial%20state.png" alt="Initial exporter state" width="100%" /></a>
+      <br />
+      <strong>Load export</strong><br />
+      <small>Load or drop the official OpenAI data export ZIP.</small>
+      <br />
+    </td>
+    <td width="50%" valign="top" align="left">
+      <a href="readme_files/02%20-%20OpenAI%20Data%20Export%20ZIP%20selected.png"><img src="readme_files/02%20-%20OpenAI%20Data%20Export%20ZIP%20selected.png" alt="OpenAI Data Export ZIP selected" width="100%" /></a>
+      <br />
+      <strong>Select export ZIP</strong><br />
+      <small>The selected ZIP is ready for <code>Begin Extraction...</code>.</small>
+      <br />
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top" align="left">
+      <a href="readme_files/03%20-%20Extracting%20chats%20from%20Data%20Export%20ZIP.png"><img src="readme_files/03%20-%20Extracting%20chats%20from%20Data%20Export%20ZIP.png" alt="Extracting chats from Data Export ZIP" width="100%" /></a>
+      <br />
+      <strong>Extract chats</strong><br />
+      <small>Extract conversations locally from the selected OpenAI data export ZIP.</small>
+      <br />
+    </td>
+    <td width="50%" valign="top" align="left">
+      <a href="readme_files/04%20-%20Chats%20List%20-%20Initial%20view.png"><img src="readme_files/04%20-%20Chats%20List%20-%20Initial%20view.png" alt="Chats List initial view" width="100%" /></a>
+      <br />
+      <strong>Review chats</strong><br />
+      <small>Search, sort and select extracted conversations.</small>
+      <br />
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top" align="left">
+      <a href="readme_files/05%20-%20Choose%20export%20folder.png"><img src="readme_files/05%20-%20Choose%20export%20folder.png" alt="Choose export folder" width="100%" /></a>
+      <br />
+      <strong>Choose export folder</strong><br />
+      <small>Choose the folder where exported files will be written.</small>
+      <br />
+    </td>
+    <td width="50%" valign="top" align="left">
+      <a href="readme_files/06%20-%20Allow%20browser%20to%20write%20in%20selected%20export%20folder.png"><img src="readme_files/06%20-%20Allow%20browser%20to%20write%20in%20selected%20export%20folder.png" alt="Allow browser to write in selected export folder" width="100%" /></a>
+      <br />
+      <strong>Allow folder access</strong><br />
+      <small>Allow the browser to write files to the selected export folder.</small>
+      <br />
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top" align="left">
+      <a href="readme_files/07%20-%20File%20Types%20menu.png"><img src="readme_files/07%20-%20File%20Types%20menu.png" alt="File Types menu" width="100%" /></a>
+      <br />
+      <strong>Choose file types</strong><br />
+      <small>Choose <code>All File Types</code>, <code>MD Files Only</code> or <code>PDF Files Only</code>.</small>
+      <br />
+    </td>
+    <td width="50%" valign="top" align="left">
+      <a href="readme_files/08%20-%20Start%20exporting%20selected%20chats.png"><img src="readme_files/08%20-%20Start%20exporting%20selected%20chats.png" alt="Start exporting selected chats" width="100%" /></a>
+      <br />
+      <strong>Start bulk export</strong><br />
+      <small>Start exporting the selected conversations to the chosen folder.</small>
+      <br />
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top" align="left">
+      <a href="readme_files/09%20-%20Bulk%20extraction%20-%20Disabled%20Choose%20export%20folder.png"><img src="readme_files/09%20-%20Bulk%20extraction%20-%20Disabled%20Choose%20export%20folder.png" alt="Choose export folder disabled during bulk export" width="100%" /></a>
+      <br />
+      <strong>Folder control disabled</strong><br />
+      <small><code>Choose export folder</code> remains disabled while the current bulk export is running.</small>
+      <br />
+    </td>
+    <td width="50%" valign="top" align="left">
+      <a href="readme_files/10%20-%20Bulk%20extraction%20-%20Disabled%20single%20chats%20downloads.png"><img src="readme_files/10%20-%20Bulk%20extraction%20-%20Disabled%20single%20chats%20downloads.png" alt="Single chat downloads disabled during bulk export" width="100%" /></a>
+      <br />
+      <strong>Single-file saves disabled</strong><br />
+      <small><code>Save MD</code> and <code>Save PDF</code> remain disabled while the current bulk export is running.</small>
+      <br />
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top" align="left">
+      <a href="readme_files/11%20-%20Bulk%20extraction%20-%20Disabled%20Reset%20action.png"><img src="readme_files/11%20-%20Bulk%20extraction%20-%20Disabled%20Reset%20action.png" alt="Reset action disabled during bulk export" width="100%" /></a>
+      <br />
+      <strong>Reset disabled</strong><br />
+      <small>Reset exporter remains unavailable until the current bulk export finishes, as well as any other action except &quot;Cancel&quot;.</small>
+      <br />
+    </td>
+    <td width="50%" valign="top" align="left">
+      <a href="readme_files/12%20-%20Additional%20content%20found.png"><img src="readme_files/12%20-%20Additional%20content%20found.png" alt="Additional Content found" width="100%" /></a>
+      <br />
+      <strong>Additional Content</strong><br />
+      <small>Potentially recoverable content was detected after the basic export.</small>
+      <br />
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top" align="left">
+      <a href="readme_files/13%20-%20Processing%20additional%20content%20for%20selected%20exports.png"><img src="readme_files/13%20-%20Processing%20additional%20content%20for%20selected%20exports.png" alt="Processing Additional Content for selected exports" width="100%" /></a>
+      <br />
+      <strong>Working...</strong><br />
+      <small><code>Working...</code> processes Additional Content for the selected exports.</small>
+      <br />
+    </td>
+    <td width="50%" valign="top" align="left">
+      <a href="readme_files/14%20-%20Result%20of%20second%20pass.png"><img src="readme_files/14%20-%20Result%20of%20second%20pass.png" alt="Finished Additional Content result" width="100%" /></a>
+      <br />
+      <strong>Finished</strong><br />
+      <small><code>Finished</code> shows which exported files were updated.</small>
+      <br />
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top" align="left">
+      <a href="readme_files/15%20-%20Back%20to%20exporter%20on%20Close.png"><img src="readme_files/15%20-%20Back%20to%20exporter%20on%20Close.png" alt="Back to exporter on Close" width="100%" /></a>
+      <br />
+      <strong>Return to exporter</strong><br />
+      <small>Close the result to return to the exporter and continue working.</small>
+      <br />
+    </td>
+    <td width="50%" valign="top" align="left">
+      <a href="readme_files/16%20-%20Exported%20folders%20and%20files.png"><img src="readme_files/16%20-%20Exported%20folders%20and%20files.png" alt="Exported folders and files" width="100%" /></a>
+      <br />
+      <strong>Exported files</strong><br />
+      <small>Review the resulting Markdown, PDF and available Assets in the selected folder.</small>
+      <br />
+    </td>
+  </tr>
+</table>
