@@ -317,10 +317,10 @@ The gallery below shows the complete workflow from loading an OpenAI export to r
   </tr>
   <tr>
     <td width="50%" height="72" valign="middle" align="center" bgcolor="#0d1117">
-      <div align="center"><strong>1. Load export</strong><br /><small><small>Load or drop the official OpenAI data export ZIP.</small></small></div>
+      <div align="center"><strong>1. Load export</strong><br /><small><small><small>Load or drop the official OpenAI data export ZIP.</small></small></small></div>
     </td>
     <td width="50%" height="72" valign="middle" align="center" bgcolor="#0d1117">
-      <div align="center"><strong>2. Select export ZIP</strong><br /><small><small>The selected ZIP is ready for Begin Extraction....</small></small></div>
+      <div align="center"><strong>2. Select export ZIP</strong><br /><small><small><small>The selected ZIP is ready for Begin Extraction....</small></small></small></div>
     </td>
   </tr>
   <tr>
@@ -333,10 +333,10 @@ The gallery below shows the complete workflow from loading an OpenAI export to r
   </tr>
   <tr>
     <td width="50%" height="72" valign="middle" align="center" bgcolor="#0d1117">
-      <div align="center"><strong>3. Extract chats</strong><br /><small><small>Extract conversations locally from the selected OpenAI<br />data export ZIP.</small></small></div>
+      <div align="center"><strong>3. Extract chats</strong><br /><small><small><small>Extract conversations locally from the selected OpenAI data export ZIP.</small></small></small></div>
     </td>
     <td width="50%" height="72" valign="middle" align="center" bgcolor="#0d1117">
-      <div align="center"><strong>4. Review chats</strong><br /><small><small>Search, sort and select extracted conversations.</small></small></div>
+      <div align="center"><strong>4. Review chats</strong><br /><small><small><small>Search, sort and select extracted conversations.</small></small></small></div>
     </td>
   </tr>
   <tr>
@@ -349,10 +349,10 @@ The gallery below shows the complete workflow from loading an OpenAI export to r
   </tr>
   <tr>
     <td width="50%" height="72" valign="middle" align="center" bgcolor="#0d1117">
-      <div align="center"><strong>5. Choose export folder</strong><br /><small><small>Choose the folder where exported files will be written.</small></small></div>
+      <div align="center"><strong>5. Choose export folder</strong><br /><small><small><small>Choose the folder where exported files will be written.</small></small></small></div>
     </td>
     <td width="50%" height="72" valign="middle" align="center" bgcolor="#0d1117">
-      <div align="center"><strong>6. Allow folder access</strong><br /><small><small>Allow the browser to write files to the selected export<br />folder.</small></small></div>
+      <div align="center"><strong>6. Allow folder access</strong><br /><small><small><small>Allow the browser to write files to the selected export folder.</small></small></small></div>
     </td>
   </tr>
   <tr>
@@ -365,10 +365,10 @@ The gallery below shows the complete workflow from loading an OpenAI export to r
   </tr>
   <tr>
     <td width="50%" height="72" valign="middle" align="center" bgcolor="#0d1117">
-      <div align="center"><strong>7. Choose file types</strong><br /><small><small>Choose All File Types, MD Files Only or PDF Files Only.</small></small></div>
+      <div align="center"><strong>7. Choose file types</strong><br /><small><small><small>Choose All File Types, MD Files Only or PDF Files Only.</small></small></small></div>
     </td>
     <td width="50%" height="72" valign="middle" align="center" bgcolor="#0d1117">
-      <div align="center"><strong>8. Start bulk export</strong><br /><small><small>Start exporting the selected conversations to the chosen folder.</small></small></div>
+      <div align="center"><strong>8. Start bulk export</strong><br /><small><small><small>Start exporting the selected conversations to the chosen folder.</small></small></small></div>
     </td>
   </tr>
   <tr>
@@ -381,10 +381,10 @@ The gallery below shows the complete workflow from loading an OpenAI export to r
   </tr>
   <tr>
     <td width="50%" height="72" valign="middle" align="center" bgcolor="#0d1117">
-      <div align="center"><strong>9. Folder control disabled</strong><br /><small><small>Choose export folder remains disabled while the current bulk export is<br />running.</small></small></div>
+      <div align="center"><strong>9. Folder control disabled</strong><br /><small><small><small>Choose export folder remains disabled while the current bulk export is running.</small></small></small></div>
     </td>
     <td width="50%" height="72" valign="middle" align="center" bgcolor="#0d1117">
-      <div align="center"><strong>10. Single-file saves disabled</strong><br /><small><small>Save MD and Save PDF remain disabled while the current bulk export is<br />running.</small></small></div>
+      <div align="center"><strong>10. Single-file saves disabled</strong><br /><small><small><small>Save MD and Save PDF remain disabled while the current bulk export is running.</small></small></small></div>
     </td>
   </tr>
   <tr>
@@ -397,10 +397,10 @@ The gallery below shows the complete workflow from loading an OpenAI export to r
   </tr>
   <tr>
     <td width="50%" height="72" valign="middle" align="center" bgcolor="#0d1117">
-      <div align="center"><strong>11. Reset disabled</strong><br /><small><small>Reset exporter remains unavailable until the current bulk export finishes,<br />as well as any other action except &quot;Cancel&quot;.</small></small></div>
+      <div align="center"><strong>11. Reset disabled</strong><br /><small><small><small>Reset exporter remains unavailable until the current bulk export finishes, as well as any other action except &quot;Cancel&quot;.</small></small></small></div>
     </td>
     <td width="50%" height="72" valign="middle" align="center" bgcolor="#0d1117">
-      <div align="center"><strong>12. Additional Content</strong><br /><small><small>Potentially recoverable content was detected after the basic export.</small></small></div>
+      <div align="center"><strong>12. Additional Content</strong><br /><small><small><small>Potentially recoverable content was detected after the basic export.</small></small></small></div>
     </td>
   </tr>
   <tr>
@@ -413,10 +413,10 @@ The gallery below shows the complete workflow from loading an OpenAI export to r
   </tr>
   <tr>
     <td width="50%" height="72" valign="middle" align="center" bgcolor="#0d1117">
-      <div align="center"><strong>13. Working...</strong><br /><small><small>Working... processes Additional Content for the selected exports.</small></small></div>
+      <div align="center"><strong>13. Working...</strong><br /><small><small><small>Working... processes Additional Content for the selected exports.</small></small></small></div>
     </td>
     <td width="50%" height="72" valign="middle" align="center" bgcolor="#0d1117">
-      <div align="center"><strong>14. Finished</strong><br /><small><small>Finished shows which exported files were updated.</small></small></div>
+      <div align="center"><strong>14. Finished</strong><br /><small><small><small>Finished shows which exported files were updated.</small></small></small></div>
     </td>
   </tr>
   <tr>
@@ -429,10 +429,10 @@ The gallery below shows the complete workflow from loading an OpenAI export to r
   </tr>
   <tr>
     <td width="50%" height="72" valign="middle" align="center" bgcolor="#0d1117">
-      <div align="center"><strong>15. Return to exporter</strong><br /><small><small>Close the result to return to the exporter and continue working.</small></small></div>
+      <div align="center"><strong>15. Return to exporter</strong><br /><small><small><small>Close the result to return to the exporter and continue working.</small></small></small></div>
     </td>
     <td width="50%" height="72" valign="middle" align="center" bgcolor="#0d1117">
-      <div align="center"><strong>16. Exported files</strong><br /><small><small>Review the resulting Markdown, PDF and available Assets in the<br />selected folder.</small></small></div>
+      <div align="center"><strong>16. Exported files</strong><br /><small><small><small>Review the resulting Markdown, PDF and available Assets in the selected folder.</small></small></small></div>
     </td>
   </tr>
 </table>
