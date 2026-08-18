@@ -335,7 +335,7 @@ The gallery below shows the complete workflow from loading an OpenAI export to r
     <td width="50%" height="64" valign="middle" align="center" bgcolor="#0d1117">
       <div align="center">
         <strong>Select export ZIP</strong><br />
-        <small><small><small>The selected ZIP is ready for <code>Begin Extraction...</code>.</small></small></small>
+        <small><small><small>The selected ZIP is ready for Begin Extraction....</small></small></small>
       </div>
     </td>
   </tr>
@@ -395,7 +395,7 @@ The gallery below shows the complete workflow from loading an OpenAI export to r
     <td width="50%" height="64" valign="middle" align="center" bgcolor="#0d1117">
       <div align="center">
         <strong>Choose file types</strong><br />
-        <small><small><small>Choose <code>All File Types</code>, <code>MD Files Only</code> or <code>PDF Files Only</code>.</small></small></small>
+        <small><small><small>Choose All File Types, MD Files Only or PDF Files Only.</small></small></small>
       </div>
     </td>
     <td width="50%" height="64" valign="middle" align="center" bgcolor="#0d1117">
@@ -417,13 +417,13 @@ The gallery below shows the complete workflow from loading an OpenAI export to r
     <td width="50%" height="64" valign="middle" align="center" bgcolor="#0d1117">
       <div align="center">
         <strong>Folder control disabled</strong><br />
-        <small><small><small><code>Choose export folder</code> remains disabled while the current bulk export is running.</small></small></small>
+        <small><small><small>Choose export folder remains disabled while the current bulk export is running.</small></small></small>
       </div>
     </td>
     <td width="50%" height="64" valign="middle" align="center" bgcolor="#0d1117">
       <div align="center">
         <strong>Single-file saves disabled</strong><br />
-        <small><small><small><code>Save MD</code> and <code>Save PDF</code> remain disabled while the current bulk export is running.</small></small></small>
+        <small><small><small>Save MD and Save PDF remain disabled while the current bulk export is running.</small></small></small>
       </div>
     </td>
   </tr>
@@ -461,13 +461,13 @@ The gallery below shows the complete workflow from loading an OpenAI export to r
     <td width="50%" height="64" valign="middle" align="center" bgcolor="#0d1117">
       <div align="center">
         <strong>Working...</strong><br />
-        <small><small><small><code>Working...</code> processes Additional Content for the selected exports.</small></small></small>
+        <small><small><small>Working... processes Additional Content for the selected exports.</small></small></small>
       </div>
     </td>
     <td width="50%" height="64" valign="middle" align="center" bgcolor="#0d1117">
       <div align="center">
         <strong>Finished</strong><br />
-        <small><small><small><code>Finished</code> shows which exported files were updated.</small></small></small>
+        <small><small><small>Finished shows which exported files were updated.</small></small></small>
       </div>
     </td>
   </tr>
