@@ -1,6 +1,6 @@
 <img src="readme_files/hero_image.jpg" alt="OpenAI Data Exporter" width="100%" />
 
-[Download latest release 🡻](https://github.com/zivanovicmarko-stack/OpenAI-Data-Exporter/releases/latest)
+<a href="https://github.com/zivanovicmarko-stack/OpenAI-Data-Exporter/releases/latest" style="text-decoration: none;">Download latest release 🡻</a>
 
 # OpenAI Data Exporter
 
